@@ -9,6 +9,7 @@
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary
                     Source="Assets/IconButtons.xaml" />
+                <ResourceDictionary Source="Themes/Themes.xaml"/>
             </ResourceDictionary.MergedDictionaries>
             <sample:ActivitySampleDataSource
                 x:Key="Sample.Activity" />
