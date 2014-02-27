@@ -5,19 +5,17 @@ namespace XAMLComposition.Controls
 {
     public class IconButton : Button
     {
-        public const string IconPropertyName = "Icon";
-
         public static readonly DependencyProperty IconProperty = DependencyProperty.Register(
-            IconPropertyName,
-            typeof(FrameworkElement),
+            "Icon",
+            typeof(object),
             typeof(IconButton),
             new PropertyMetadata(null));
 
-        public FrameworkElement Icon
+        public object Icon
         {
             get
             {
-                return (FrameworkElement)GetValue(IconProperty);
+                return GetValue(IconProperty);
             }
             set
             {
