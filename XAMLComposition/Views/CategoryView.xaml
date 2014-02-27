@@ -25,15 +25,15 @@
         </Grid.ColumnDefinitions>
         <c:IconButton
             Content="User Groups"
-            Width="90"
-            Height="90"
+            Width="120"
+            Height="120"
             Margin="10"
             Icon="{StaticResource IconButtons.UserGroup}" />
         <c:IconButton
             Content="Recruiting"
             Grid.Column="1"
-            Width="90"
-            Height="90"
+            Width="120"
+            Height="120"
             Margin="10"
             Icon="{StaticResource IconButtons.Recruiting}" />
     </Grid>
