@@ -26,5 +26,16 @@ namespace XAMLComposition
         {
             this.InitializeComponent();
         }
+
+        private void Page_SizeChanged(object sender, Windows.UI.Xaml.SizeChangedEventArgs e)
+        {
+            bool narrow = e.NewSize.Width < 850;
+            Full.Visibility = !narrow
+                ? Windows.UI.Xaml.Visibility.Visible
+                : Windows.UI.Xaml.Visibility.Collapsed;
+            Snapped.Visibility = narrow
+                ? Windows.UI.Xaml.Visibility.Visible
+                : Windows.UI.Xaml.Visibility.Collapsed;
+        }
     }
 }
